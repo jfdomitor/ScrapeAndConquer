@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Save DOM as JSON</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      width: 300px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h3>Scrape and conquer</h3>
+
+  <h4>Select an Action</h4>
+  <label>
+    <input type="radio" name="action" value="domAsJson" id="saveDom">
+    Save DOM as JSON file
+  </label>
+  <p><i>Converts the DOM to JSON and saves it to disk</i></p>
+  <br>
+  <label>
+    <input type="radio" name="action" value="tablesAsJson" id="convertTables">
+    Tables to JSON file
+  </label>
+  <p><i>Converts html tables in the DOM to JSON and saves them to disk</i></p>
+  
+  <label>
+    <input type="radio" name="action" value="templateBased" id="templateBased">
+    Template-based extraction
+  </label>
+  <p><i>Upload a template JSON file to guide the data extraction process</i></p>
+
+  <!-- File Upload: Only enabled when "Template-based extraction" is selected -->
+  <input type="file" id="templateFile" accept=".json" disabled>
+  
+  <br><br>
+ 
+  <button id="saveDomButton">Go</button>
+  <script src="popup.js"></script>
+</body>
+</html>
