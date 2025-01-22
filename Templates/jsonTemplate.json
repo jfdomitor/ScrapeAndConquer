@@ -1,0 +1,25 @@
+{
+  "tableTagNames": ["TABLE"],
+  "tableAttributes": {},
+
+  "tableHeaderTagNames": ["THEAD"],
+  "tableHeaderAttributes": {},
+
+  "tableHeaderRowTagNames": ["TR"],
+  "tableHeaderRowAttributes": {},
+  
+  "staticTableHeaderColumnNames": [],
+  "tableHeaderColumnTagNames": ["TH"],
+  "tableHeaderColumnAttributes": {},
+  
+  "tableBodyTagNames": ["TBODY"],
+  "tableBodyAttributes": {},
+  
+  "rowTagNames": ["TR"],
+  "rowAttributes": {},
+  
+  "columnTagNames": ["TD"],
+  "columnAttributes": {},
+
+  "tagNameInfo": "ANY (Only search the attributes), DC (Use the direct children)"
+}

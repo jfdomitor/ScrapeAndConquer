@@ -1,0 +1,24 @@
+{
+    "tableTagNames": ["BODY"],
+    "tableAttributes": {},
+  
+    "tableHeaderTagNames": [],
+    "tableHeaderAttributes": {},
+  
+    "tableHeaderRowTagNames": [],
+    "tableHeaderRowAttributes": {},
+    
+    "staticTableHeaderColumnNames": [],
+    "tableHeaderColumnTagNames": [],
+    "tableHeaderColumnAttributes": {},
+    
+    "tableBodyTagNames": [],
+    "tableBodyAttributes": {},
+    
+    "rowTagNames": ["ARTICLE"],
+    "rowAttributes": {},
+    
+    "columnTagNames": ["HEADER","H5","SECTION"],
+    "columnAttributes": {}
+  }
+  
