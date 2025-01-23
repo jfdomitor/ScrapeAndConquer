@@ -139,7 +139,7 @@ function convertDOMToJson()
       // Helper function to determine if a node should be excluded
       function shouldExcludeNode(node) {
         // Example: Exclude certain tags like <script> or <style>
-        const excludedTags = ['SCRIPT', 'STYLE','BR'];
+        const excludedTags = ['SCRIPT', 'STYLE','BR','HR','NAV','INPUT','PATH','SVG','G'];
       
         // If the node is an element and matches an excluded tag, return true
         if (node.nodeType === Node.ELEMENT_NODE && excludedTags.includes(node.tagName)) {
@@ -156,6 +156,13 @@ function convertDOMToJson()
           return true;
         }
     
+        if (node.nodeType === Node.TEXT_NODE && node.nodeValue.trim()==='' && !node.attributes)
+        {
+          if (!node.childNodes)
+              return true;
+          if (node.childNodes.length===0)
+             return true;
+        }
       
       
         // Add other exclusion conditions here as needed
